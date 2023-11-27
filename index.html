@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <script defer src="./main.js"></script>
+    <title>Amber + Onyx</title>
+</head>
+<body>
+    <section>
+        <h1 class="header__text">Herding Cats</h1>
+        <header class="header">
+            <button class="header__col cat">
+                <img class="cat__headshot" src="./images/amber.png" alt=""/>
+                <div class="cat__details">
+                    <h2 class="cat__name">Amber</h2>
+                    <ul>
+                        <li>🧬 American Short Hair</li>
+                        <li>❣️ Playful + affectionate</li>
+                        <li>🕵️‍♀️ A.K.A. "Peanut"</li>
+                        <li>🐯 5yr old</li>
+                    </ul>
+                </div>
+            </button>
+            <button class="header__col cat">
+                <img class="cat__headshot" src="./images/onyx.png" alt=""/>
+                <div class="cat__details">
+                    <h2 class="cat__name">Onyx</h2>
+                    <ul>
+                        <li>🧬 Maine Coon-ish</li>
+                        <li>🏔️ Outdoorsy guy</li>
+                        <li>🕵️‍♂️ A.K.A. "Puffer"</li>
+                        <li>🐯 5yr old</li>
+                    </ul>
+                </div>
+            </button>
+            <div class="header__col time tile">
+                <div class="time__value">
+                    <span class="time__num js-countdown-hour">4</span> hours 
+                    <span class="time__num js-countdown-minute">27</span> mins...
+                </div>
+                <p class="time__heading"><span class="time__live-dot"></span>Until next meal</p>
+                <button class="js-show-schedule js-toggle-schedule">📅 Toggle Schedule</button>
+            </div>
+        </header>
+    </section>
+    <div class="overlap-container js-overlap-container">
+        <section data-name="schedule">
+            <div class="tile tile--fullwidth schedule js-show-schedule">
+                <h2 class="schedule__header">Schedule</h2>
+                <div class="schedule__col">
+                    <div class="schedule__col-img">
+                        <img src="./images/amber.png" alt=""/>
+                    </div>
+                    <p class="schedule__detail">☀️ 8:30 a.m. - Large Can</p>
+                    <p class="schedule__detail">🌙 8:30 p.m. - Small Can</p>
+                </div>
+                <div class="schedule__col">
+                    <div class="schedule__col-img">
+                        <img src="./images/onyx.png" alt=""/>
+                        <span class="tag">Urinary Health</span>
+                    </div>
+                    <p class="schedule__detail">☀️ 8:30 a.m. - Large Can</p>
+                    <p class="schedule__detail">🌙 8:30 p.m. - Small Can</p>
+                </div>
+            </div>
+        </section>
+
+        <section data-name="main">
+            <div class="tile tile--fullwidth notes">
+                <h2 class="">Cat Notes</h2>
+                <ul>
+                    <li><span>🔔</span> Cats should have collars when let outside</li>
+                    <li><span>🚪</span> Onyx will try to enter from upstairs office window if wait time at backdoor slider is too long</li>
+                    <li><span>🔒</span> Locking the pantry when not in use is a good habit. Onyx is known to break in and eat bread, etc</li>
+                    <li><span>💩</span> Litter boxes are in the downstairs bathroom tub</li>
+                    <li><span>🍬</span> Feel free to "hide" some kibble around the house for them to find. This can be done while they are distracted eating breakfast :)</li>
+                </ul>
+            </div>
+
+            <div class="tile tile--fullwidth">
+                <h2 class="">House Notes</h2>
+                <ul>
+                    <li><span>🛜</span> <strong>Wifi:</strong> MariEthan <strong> Password:</strong>TaylorSwift666</li>
+                    <li><span>♻️</span> Trash and Recycle pickup early Thursday morning</li>
+                    <li><span>🌱</span> Feel free to water plants that look dry</li>
+                    <li><span>📺</span> Help yourself to YouTubeTV / Netflix</li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <ul class="contact">
+            <li><a href="tel:7817388261">📞 Marie: (781) 738-8261</a></li>
+            <li><a href="tel:9079478385">📞 Ethan: (907) 947-8385</a></li>
+        </ul>
+    </section>
+</body>
+</html>
