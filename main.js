@@ -36,9 +36,14 @@ const mealCountdown = () => {
     let minuteUntilMeal = breakfastMinute - currentMinute;
 
     // Swap to dinner if applicable
-    if (currentHour < dinnerHour && currentHour > breakfastHour) {
+    if (currentHour <= dinnerHour && currentHour > breakfastHour) {
         hourUntilMeal = dinnerHour - currentHour;
         minuteUntilMeal = dinnerMinute - currentMinute;
+    }
+
+    // Both meals have past for the day
+    if (currentHour > dinnerHour) {
+        hourUntilMeal = (24 - currentHour) + breakfastHour;
     }
 
     if (minuteUntilMeal < 1) {
